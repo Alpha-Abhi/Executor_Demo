@@ -7,13 +7,13 @@ public class Task implements Runnable{
 	}
 	@Override
 	public void run() {
-		System.out.println("Task"+st+" Start");
+		System.out.println(st+" Start");
 		int i = 0;
 		while(i<5) {
 			try {Thread.sleep(500);}catch(Exception e){System.out.println(e);}
-			System.out.print(st);
+			System.out.print(st+",");
 			i++;
 		}
-		System.out.println("Task"+st+" Completed");
+		System.out.println("...(Task"+st+") Completed");
 	}
 }
